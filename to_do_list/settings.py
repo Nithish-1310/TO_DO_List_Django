@@ -82,7 +82,7 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-database_url = os.environ.get("DATABASE__URL")
+database_url = os.environ.get("DATABASE_URL")
 DATABASES['default'] = dj_database_url.parse(database_url)
 
 #postgres://todolist_django_render_db_user:5HxOqeDY8PvzVyRnI1pQpFG1OBlWAQtP@dpg-cnap4ken7f5s73fpprr0-a.oregon-postgres.render.com/todolist_django_render_db
